@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aries — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-brand">Aries</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <div class="contact-wrap">
+
+      <!-- Header -->
+      <div class="contact-header">
+        <p class="eyebrow animate-in">Get in touch</p>
+        <h1 class="animate-in delay-1">Let's<br><em style="font-family: var(--font-display); font-style:italic; color: var(--accent);">connect</em></h1>
+        <p class="animate-in delay-2">
+          Whether you're a gallery, residency program, or fellow artist — I'd love to hear from you.
+          Fill out the form below or reach out directly.
+        </p>
+      </div>
+
+      <!-- Contact info blocks -->
+      <div class="contact-blocks animate-in delay-2">
+        <div class="contact-block">
+          <div class="contact-block-label">Email</div>
+          <div class="contact-block-value">
+            <!-- Replace with your actual email address -->
+            <a href="mailto:your@email.com">your@email.com</a>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-label">Based in</div>
+          <div class="contact-block-value">Columbia, MO</div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-label">Instagram</div>
+          <div class="contact-block-value">
+            <!-- Replace with your actual Instagram handle -->
+            <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">@yourhandle</a>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-label">Available for</div>
+          <div class="contact-block-value">Residencies &amp; Commissions</div>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <!--
+        NOTE ON THE FORM:
+        GitHub Pages only serves static files, so this form won't send email by itself.
+        To make it functional, sign up for a free service like Formspree (formspree.io)
+        and replace the action attribute below with your Formspree endpoint URL.
+        Example: action="https://formspree.io/f/yourformid"
+      -->
+      <form class="contact-form animate-in delay-3"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST">
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="e.g. Artist residency inquiry" />
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about your project or inquiry…" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+
+      </form>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <span>&copy; 2025 Aries. All rights reserved.</span>
+    <span>Painting &amp; Mixed Media</span>
+  </footer>
+
+</body>
+</html>

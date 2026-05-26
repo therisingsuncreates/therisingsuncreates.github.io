@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aries — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-brand">Aries</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Work</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+
+    <!-- Hero -->
+    <section class="hero">
+      <p class="hero-eyebrow animate-in">Painting &amp; Mixed Media</p>
+      <h1 class="hero-title animate-in delay-1">
+        Work that <em>lives</em><br>between surfaces
+      </h1>
+      <p class="hero-sub animate-in delay-2">
+        A selection of paintings and mixed media work — exploring texture, memory, and material.
+      </p>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-section">
+      <div class="gallery-grid">
+
+        <!-- 
+          HOW TO ADD YOUR IMAGES:
+          Replace the <div class="gallery-placeholder"> inside each .gallery-item
+          with: <img src="images/your-filename.jpg" alt="Title of Work" />
+          Place your image files in an "images/" folder next to this HTML file.
+        -->
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <div class="gallery-placeholder" style="background: #d4c5b0;">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" opacity="0.3"><rect x="8" y="8" width="24" height="24" stroke="#1c1a17" stroke-width="1.5"/><line x1="8" y1="32" x2="32" y2="8" stroke="#1c1a17" stroke-width="1.5"/></svg>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3>Untitled No. 1</h3>
+              <span>Oil on canvas · 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <div class="gallery-placeholder" style="background: #c8b99a;">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" opacity="0.3"><rect x="8" y="8" width="24" height="24" stroke="#1c1a17" stroke-width="1.5"/><line x1="8" y1="32" x2="32" y2="8" stroke="#1c1a17" stroke-width="1.5"/></svg>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3>Untitled No. 2</h3>
+              <span>Mixed media · 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <div class="gallery-placeholder" style="background: #e0d4c0;">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" opacity="0.3"><rect x="8" y="8" width="24" height="24" stroke="#1c1a17" stroke-width="1.5"/><line x1="8" y1="32" x2="32" y2="8" stroke="#1c1a17" stroke-width="1.5"/></svg>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3>Untitled No. 3</h3>
+              <span>Pencil on paper · 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <div class="gallery-placeholder" style="background: #b8a88a;">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" opacity="0.3"><rect x="8" y="8" width="24" height="24" stroke="#1c1a17" stroke-width="1.5"/><line x1="8" y1="32" x2="32" y2="8" stroke="#1c1a17" stroke-width="1.5"/></svg>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3>Untitled No. 4</h3>
+              <span>Mixed media · 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <div class="gallery-placeholder" style="background: #cfc0a8;">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" opacity="0.3"><rect x="8" y="8" width="24" height="24" stroke="#1c1a17" stroke-width="1.5"/><line x1="8" y1="32" x2="32" y2="8" stroke="#1c1a17" stroke-width="1.5"/></svg>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3>Untitled No. 5</h3>
+              <span>Acrylic on canvas · 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <div class="gallery-placeholder" style="background: #ddd0bc;">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" opacity="0.3"><rect x="8" y="8" width="24" height="24" stroke="#1c1a17" stroke-width="1.5"/><line x1="8" y1="32" x2="32" y2="8" stroke="#1c1a17" stroke-width="1.5"/></svg>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3>Untitled No. 6</h3>
+              <span>Oil on canvas · 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <div class="gallery-placeholder" style="background: #c4b49a;">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" opacity="0.3"><rect x="8" y="8" width="24" height="24" stroke="#1c1a17" stroke-width="1.5"/><line x1="8" y1="32" x2="32" y2="8" stroke="#1c1a17" stroke-width="1.5"/></svg>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3>Untitled No. 7</h3>
+              <span>Charcoal · 2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <div class="gallery-placeholder" style="background: #bfae98;">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" opacity="0.3"><rect x="8" y="8" width="24" height="24" stroke="#1c1a17" stroke-width="1.5"/><line x1="8" y1="32" x2="32" y2="8" stroke="#1c1a17" stroke-width="1.5"/></svg>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3>Untitled No. 8</h3>
+              <span>Mixed media · 2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <div class="gallery-placeholder" style="background: #d8cabb;">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" opacity="0.3"><rect x="8" y="8" width="24" height="24" stroke="#1c1a17" stroke-width="1.5"/><line x1="8" y1="32" x2="32" y2="8" stroke="#1c1a17" stroke-width="1.5"/></svg>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3>Untitled No. 9</h3>
+              <span>Watercolour · 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <div class="gallery-placeholder" style="background: #c9b9a2;">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" opacity="0.3"><rect x="8" y="8" width="24" height="24" stroke="#1c1a17" stroke-width="1.5"/><line x1="8" y1="32" x2="32" y2="8" stroke="#1c1a17" stroke-width="1.5"/></svg>
+          </div>
+          <div class="gallery-overlay">
+            <div class="gallery-caption">
+              <h3>Untitled No. 10</h3>
+              <span>Oil on canvas · 2023</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /gallery-grid -->
+    </section><!-- /gallery-section -->
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation()" />
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <span>&copy; 2025 Aries. All rights reserved.</span>
+    <span>Painting &amp; Mixed Media</span>
+  </footer>
+
+  <script>
+    function openLightbox(item) {
+      const img = item.querySelector('img');
+      if (!img) return; // placeholder — no image yet
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox-img').alt = img.alt;
+      document.getElementById('lightbox').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+
+</body>
+</html>
